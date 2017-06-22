@@ -324,9 +324,6 @@ section:nth-of-type(4){
 /*end-css-part3*/
 
 /*begin-css——part4*/
-#part4 .show{
-	opacity: 1;
-}
 #part4 .part4-exp{
 	width: 750px;
 	height: 350px;
@@ -344,8 +341,11 @@ section:nth-of-type(4){
 	height: 100%;
 	background-color: rgba(255,255,255);
 	border-radius: 2%;
-	opacity: 0;
+	transition-duration: 1s;
 }
+#part4 .part4-exp-all:nth-of-type(1){opacity: 1;}
+#part4 .part4-exp-all:nth-of-type(2){opacity: 0;}
+
 #part4 .exp-image{
 	width: 150px;
 	height: 100%;	
