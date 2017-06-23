@@ -38,6 +38,9 @@ section:nth-of-type(3){
 section:nth-of-type(4){
 	background-color: rgba(147,91,75,.5);
 }
+section:nth-of-type(5){
+	background-color: rgba(65,78,92.5);
+}
 /*end : set all section's css*/
 .container .words{position: relative;top: 20px;}
 .container .words p{position: relative;padding-bottom: 20px;}
@@ -350,7 +353,7 @@ section:nth-of-type(4){
 	width: 150px;
 	height: 100%;	
 	background: center center no-repeat;
-	background-image: url("../images/java.jpg");
+/*	background-image: url("../images/java.jpg");*/
 	background-size: 80%;
 	float: left;
 }
@@ -378,7 +381,26 @@ section:nth-of-type(4){
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background-color: rgba(175, 113, 100);
 }
+#part4 ul li:nth-of-type(1){background-color: rgba(98,60,50);}
+#part4 ul li:nth-of-type(2){background-color: rgba(175, 113, 100);}
 #part4 ul li.selected{background-color: rgba(98, 60, 50);}
 /*end-css-part4*/
+
+/*begin-css——part5*/
+#part5 .part5-content{
+	font-size: .8em;
+	line-height: 50px;
+}
+#part5 .part5-title span{
+	font-size: 1.2em;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: bold;
+}
+.part5-title span:nth-of-type(1){color: rgba(255,0,0);}
+.part5-title span:nth-of-type(2){color: rgba(51,204,255);}
+.part5-title span:nth-of-type(3){color: rgba(102,204,0);}
+.part5-title span:nth-of-type(4){color: rgba(255,102,51);}
+#part5 h2{margin-bottom: 30px;}
+/*end-css-part5*/
