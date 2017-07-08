@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>SSL在线简历</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/resume.js"></script>
+	<script src="js/flowtype.js"></script>
 </head>
 <body>
 <div class="container">
@@ -23,135 +25,151 @@
 			<li><div id="box"><a href="#part5" class="circle"><span class="alert"><p>联系我</p></span></a></div></li>
 		</ul>
 	</nav>
+	<div class="main">
 	<section id="part1">
-		<div class="pic">
-			<img src="images/01.jpg">		
-		</div>
-		<div class="words">
-			<p>生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵</p>
-			<p>我叫LSS</p>
-			<p>一名前端研发工程师</p>
-			<p>nika_13@163.com</p>
+		<div class="wrapper">
+			<div class="pic">
+				<img src="images/01.jpg">		
+			</div>
+			<div class="words">
+				<p>生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵</p>
+				<p>我叫LSS</p>
+				<p>一名前端研发工程师</p>
+				<p>nika_13@163.com</p>
+			</div>			
 		</div>
 	</section>
 
 	<section id="part2">
-		<!-- 关于我 -->
-		<h2>关于我</h2>
-		<ul id="part2-content">
-			<li>
-				<div class="square">
-					<div class="square-img"><img src="images/i_age.svg"></div>
-					<div class="square-info">年龄/24岁</div>
-				</div>
-			</li>
-			<li>
-				<div class="square">
-					<div class="square-img"><img src="images/i_edu.svg"></div>
-					<div class="square-info">学历/硕士</div>
-				</div>
-			</li>
-			<li>
-				<div class="square">
-					<div class="square-img"><img src="images/i_site.svg"></div>
-					<div class="square-info">坐标/广州</div>
-				</div>
-			</li>
-			<li>
-				<div class="square">
-					<div class="square-img"><img src="images/i_status.svg"></div>
-					<div class="square-info">状态/非在职</div>
-				</div>
-			</li>
-		</ul>
-		<div id="part2-info">
-			<p>高效的自学能力,具备独立分析解决问题能力</p>
-			<p>强烈的自我驱动力,代码强迫症患者</p>
+		<div class="wrapper">
+			<!-- 关于我 -->
+			<h2>关于我</h2>
+			<ul id="part2-content">
+				<li>
+					<div class="square">
+						<div class="square-img"><img src="images/i_age.svg"></div>
+						<div class="square-info">年龄/24岁</div>
+					</div>
+				</li>
+				<li>
+					<div class="square">
+						<div class="square-img"><img src="images/i_edu.svg"></div>
+						<div class="square-info">学历/硕士</div>
+					</div>
+				</li>
+				<li>
+					<div class="square">
+						<div class="square-img"><img src="images/i_site.svg"></div>
+						<div class="square-info">坐标/广州</div>
+					</div>
+				</li>
+				<li>
+					<div class="square">
+						<div class="square-img"><img src="images/i_status.svg"></div>
+						<div class="square-info">状态/非在职</div>
+					</div>
+				</li>
+			</ul>
+			<div id="part2-info">
+				<p>高效的自学能力,具备独立分析解决问题能力</p>
+				<p>强烈的自我驱动力,代码强迫症患者</p>
+			</div>			
 		</div>
 	</section>
 
 	<section id="part3">
+		<div class="wrapper">
 		<!-- 技能栈 -->
-		<h2>技能栈</h2>
-		<div id="part3-content">
-			<div class="part3-circle-box">
-				<ul class="out-circle">
-					<li class="out">less</li>
-					<li class="out">angular</li>
-					<li class="out">react</li>
-					<li class="out">git</li>
-					<li class="out">webpack</li>
-					<li class="out">nodejs</li>
-					<li class="out">gulp</li>
-					<li class="out">cordova</li>					
-				</ul>
-				<ul class="inner-circle">
-					<li class="inner">fp</li>
-					<li class="inner">ng2</li>
-					<li class="inner">es6</li>
-					<li class="inner">vue</li>
-				</ul>			
-			</div>
-			<div class="part3-detail">
-				熟练使用angularJs1.x及各种类库的指令封装<br/>
-				常驻PC/APP/微信三平台前端研发<br/>
-				擅长组件/插件开发，能脱离库书写JS代码<br/>
-				编码常思其健壮性，扩展性，维护性<br/>
-			</div>			
-		</div>			
+			<h2>技能栈</h2>
+			<div id="part3-content">
+				<div class="part3-circle-box">
+					<ul class="out-circle">
+						<li class="out">less</li>
+						<li class="out">angular</li>
+						<li class="out">react</li>
+						<li class="out">git</li>
+						<li class="out">webpack</li>
+						<li class="out">nodejs</li>
+						<li class="out">gulp</li>
+						<li class="out">cordova</li>					
+					</ul>
+					<ul class="inner-circle">
+						<li class="inner">fp</li>
+						<li class="inner">ng2</li>
+						<li class="inner">es6</li>
+						<li class="inner">vue</li>
+					</ul>			
+				</div>
+				<div class="part3-detail">
+					<p>熟练使用angularJs1.x及各种类库的指令封装</p>	
+					<p>常驻PC/APP/微信三平台前端研发</p>
+					<p>擅长组件/插件开发，能脱离库书写JS代码</p>
+					<p>编码常思其健壮性，扩展性，维护性</p>
+				</div>			
+			</div>				
+		</div>		
 	</section>
 
 	<section id="part4">
+		<div class="wrapper">
 		<!-- 经历 -->
-		<h2>经历</h2>
-		<div class="part4-content">
-			<!-- 轮播的主要内容 -->
-			<div class="part4-exp">
-				<div class="part4-exp-all" id="exp1">
-					<div class="exp-image" style="background-image: url('images/java.jpg');"></div>
-					<div class="exp-detail">
-						<h4>上海华腾软件有限公司</h4>
-						<p class="exp-time">2014年4月-7月</p>
-						<p class="exp-position">JAVA工程师</p>
-						<p>参与江西农信跨平台统一收单系统改版<p>
-						<span>负责根据跨平台统一收单系统需求书完成统一管理平台的风险管理和报表管理的开发</span>
+			<h2>经历</h2>
+			<div class="part4-content">
+				<!-- 轮播的主要内容 -->
+				<div class="part4-exp">
+					<div class="part4-exp-all" id="exp1">
+						<div class="exp-image" style="background-image: url('images/java.jpg');"></div>
+						<div class="exp-detail">
+							<h4>上海华腾软件有限公司</h4>
+							<p class="exp-time">2014年4月-7月</p>
+							<p class="exp-position">JAVA工程师</p>
+							<p>参与江西农信跨平台统一收单系统改版<p>
+							<span>负责根据跨平台统一收单系统需求书完成统一管理平台的风险管理和报表管理的开发</span>
+						</div>
 					</div>
+					<div class="part4-exp-all" id="exp2">
+						<div class="exp-image" style="background-image: url('images/lion.png');"></div>
+						<div class="exp-detail">
+							<h4>第二页经历</h4>
+							<p class="exp-time">2014年4月-7月</p>
+							<p class="exp-position">JAVA工程师</p>
+							<p>参与江西农信跨平台统一收单系统改版<p>
+							<span>负责根据跨平台统一收单系统需求书完成统一管理平台的风险管理和报表管理的开发</span>
+						</div>
+					</div>				
 				</div>
-				<div class="part4-exp-all" id="exp2">
-					<div class="exp-image" style="background-image: url('images/lion.png');"></div>
-					<div class="exp-detail">
-						<h4>第二页经历</h4>
-						<p class="exp-time">2014年4月-7月</p>
-						<p class="exp-position">JAVA工程师</p>
-						<p>参与江西农信跨平台统一收单系统改版<p>
-						<span>负责根据跨平台统一收单系统需求书完成统一管理平台的风险管理和报表管理的开发</span>
-					</div>
-				</div>				
-			</div>
-			<!-- 轮播导航 -->
-			<div class="part4-ul-container">
-				<ul>
-					<li class="exp-slide" exp="1"></li>
-					<li class="exp-slide" exp="2"></li>
-				</ul>				
-			</div>
+				<!-- 轮播导航 -->
+				<div class="part4-ul-container">
+					<ul>
+						<li class="exp-slide" exp="1"></li>
+						<li class="exp-slide" exp="2"></li>
+					</ul>				
+				</div>
+			</div>			
 		</div>		
 	</section>
 
 	<section id="part5">
+		<div class="wrapper">
 		<!-- 联系我 -->
-		<h2>联系我</h2>
-		<div class="part5-content">
-			<p class="part5-title"><span>灵感</span><span>代码</span><span>梦想</span><span>未来</span></p>
-			注重效率，偏爱敏捷开发<br/>
-			喜欢尝试，期待新鲜事物<br/>
-			前端即兴趣，兴趣即未来<br/>
-			行路有良友，便是捷径<br/>
-			带上我吧，一起看到更大的世界<br/>			
+			<h2>联系我</h2>
+			<div class="part5-content">
+				<p class="part5-title"><span>灵感</span><span>代码</span><span>梦想</span><span>未来</span></p>
+				注重效率，偏爱敏捷开发<br/>
+				喜欢尝试，期待新鲜事物<br/>
+				前端即兴趣，兴趣即未来<br/>
+				行路有良友，便是捷径<br/>
+				带上我吧，一起看到更大的世界<br/>			
+			</div>			
 		</div>
 	</section>
 </div>
 
+<script type="text/javascript">
+	$('.main').flowtype();
+</script>
+		
+	</div>
 
 <footer></footer>
 </body>
