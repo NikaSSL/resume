@@ -17,13 +17,16 @@ section:nth-of-type(3){background-color: rgba(75,91,139,.5);}
 section:nth-of-type(4){background-color: rgba(147,91,75,.5);}
 section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 /*end : set all section's css*/
-
-.log img{
+.log1{
 	border-radius: 50%;
 	width: 50px;
 	position: fixed;
 	left: 5%;
 	top: 10px;
+}
+.log2{
+	border-radius: 50%;
+	width: 50px;
 }
 .container{
 	margin: 0 auto;
@@ -50,7 +53,8 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 .container .words p{position: relative;padding-bottom: 20px;}
 .container .words p:nth-child(1){padding-bottom: 30px;}
 
-.container nav{
+/*begin-navStyle1*/
+.container #nav-style1{
 	position: fixed;
 	right: 20px;
 	top: 200px;
@@ -58,14 +62,14 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 	transform:translatY(-50%);
 	font-size: .75em;
 }
-.container nav ul{list-style-type: none;}
-.container nav li{color: rgb(255,255,255);}
-.container nav li a{
+.container #nav-style1 ul{list-style-type: none;}
+.container #nav-style1 li{color: rgb(255,255,255);}
+.container #nav-style1 li a{
 	color: rgb(255,255,255);
 	text-decoration: none;
 	background-color: rgba(0,0,0,.2); 
 }
-.container nav li a:hover{
+.container #nav-style1 li a:hover{
 	background-color: rgba(0,0,0,.9); 
 }
 #box{
@@ -91,6 +95,29 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 	transform: scale(2.5,2.5);
 	background-color: rgba(0,0,0,.7);
 }
+/*end-navStyle1*/
+/*begin-navStyle2*/
+.container #nav-style2{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(255,255,255,.5);
+	color: rgba(0,0,0,.9);
+}
+#nav-style2 ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+}
+#nav-style2 a{
+	text-decoration: none;
+}
+/*end-navStyle2*/
 /*begin-消息提示框*/
 .alert{
 	display: none;
@@ -418,13 +445,18 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 @media only screen and (min-width: 1157px){
 #part3 p{margin-bottom: 20px;}
 }
+@media only screen and (min-width: 934px){
+#nav-style2{display: none;}
+}
 @media only screen and (max-width: 939px){
 #part4 .exp-image{display: none;}
 #part4 .part4-exp{width: 80%; }
 #part4 .exp-detail{width: 100%;}
 
 /*变幻导航*/
-
+#nav-style1{display: none;}
+#nav-style2{display: block;}
+.log1{display: none;}
 /*end-变幻导航*/
 }
 
