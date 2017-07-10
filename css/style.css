@@ -47,7 +47,7 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 	background-color: rgba(255,255,255,1);
 }
 
-.wrapper{width: 90%;position: relative;top: 100px;}
+.wrapper{position: relative;top: 100px;}
 
 .container .words{position: relative;top: 20px;}
 .container .words p{position: relative;padding-bottom: 20px;}
@@ -447,6 +447,7 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 }
 @media only screen and (min-width: 934px){
 #nav-style2{display: none;}
+.wrapper{width: 90%;}
 }
 @media only screen and (max-width: 939px){
 #part4 .exp-image{display: none;}
@@ -458,6 +459,7 @@ section:nth-of-type(5){background-color: rgba(65,78,92,.5);}
 #nav-style2{display: block;}
 .log1{display: none;}
 /*end-变幻导航*/
+.wrapper{width: 100%;}
 }
 
 /*end-CSS 媒体查询*/
